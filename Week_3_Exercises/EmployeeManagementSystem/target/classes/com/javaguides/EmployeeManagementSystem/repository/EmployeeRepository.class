@@ -1,0 +1,20 @@
+Êþº¾   = )   Ecom/javaguides/EmployeeManagementSystem/repository/EmployeeRepository   java/lang/Object   5org/springframework/data/jpa/repository/JpaRepository   >org/springframework/data/repository/PagingAndSortingRepository 
+findByName $(Ljava/lang/String;)Ljava/util/List; 	Signature _(Ljava/lang/String;)Ljava/util/List<Lcom/javaguides/EmployeeManagementSystem/entity/Employee;>; name MethodParameters findByDepartmentName departmentName 
+findByEmail M(Ljava/lang/String;)Lcom/javaguides/EmployeeManagementSystem/entity/Employee; RuntimeVisibleAnnotations /Lorg/springframework/data/jpa/repository/Query; value /SELECT e FROM Employee e WHERE e.email = :email "RuntimeVisibleParameterAnnotations 1Lorg/springframework/data/repository/query/Param; email findByDepartmentId "(Ljava/lang/Long;)Ljava/util/List; ](Ljava/lang/Long;)Ljava/util/List<Lcom/javaguides/EmployeeManagementSystem/entity/Employee;>; >SELECT e FROM Employee e WHERE e.department.id = :departmentId departmentId findByDepartment Employee.findByDepartment findAllOrderByName ()Ljava/util/List; M()Ljava/util/List<Lcom/javaguides/EmployeeManagementSystem/entity/Employee;>; Employee.findAllOrderByName 
+SourceFile EmployeeRepository.javaLjava/lang/Object;Lorg/springframework/data/jpa/repository/JpaRepository<Lcom/javaguides/EmployeeManagementSystem/entity/Employee;Ljava/lang/Long;>;Lorg/springframework/data/repository/PagingAndSortingRepository<Lcom/javaguides/EmployeeManagementSystem/entity/Employee;Ljava/lang/Long;>; +Lorg/springframework/stereotype/Repository;          	 
+  
+         
+    
+  
+                  
+    s         s            
+        
+    s         s          
+  
+        
+    
+s          s         ! "  
+    #    
+    
+s $  %    & 
+    '      (  

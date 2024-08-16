@@ -1,0 +1,21 @@
+Êþº¾   = =
+       8com/javaguides/EmployeeManagementSystem/entity/Auditable <init> ()V	  	  
+ 
+  9com/javaguides/EmployeeManagementSystem/entity/Department name Ljava/lang/String;	     id Ljava/lang/Long;	     	employees Ljava/util/List; RuntimeVisibleAnnotations Ljakarta/persistence/Id; $Ljakarta/persistence/GeneratedValue; strategy $Ljakarta/persistence/GenerationType; IDENTITY 	Signature KLjava/util/List<Lcom/javaguides/EmployeeManagementSystem/entity/Employee;>; Ljakarta/persistence/OneToMany; mappedBy 
+department  cascade !Ljakarta/persistence/CascadeType; ALL Code LineNumberTable LocalVariableTable this ;Lcom/javaguides/EmployeeManagementSystem/entity/Department; (Ljava/lang/String;)V MethodParameters getId ()Ljava/lang/Long; setId (Ljava/lang/Long;)V  getName ()Ljava/lang/String;  setName getEmployees ()Ljava/util/List; M()Ljava/util/List<Lcom/javaguides/EmployeeManagementSystem/entity/Employee;>; setEmployees (Ljava/util/List;)V LocalVariableTypeTable N(Ljava/util/List<Lcom/javaguides/EmployeeManagementSystem/entity/Employee;>;)V 
+SourceFile Department.java Ljakarta/persistence/Entity; Ljakarta/persistence/Table; 
+departments !                    e    
+                    s   [ e ! "      #   /     *· ±    $        %        & '     (  #   F     
+*· *+µ  ±    $          	  %       
+ & '     
+ 
+   )    
+    * +  #   /     *´ 
+°    $        %        & '    , -  #   >     *+µ 
+±    $   
+    #  $ %        & '         )        . /  #   /     *´  °    $       ' %        & '    0 (  #   >     *+µ  ±    $   
+    +  , %        & '      
+   )    
+    1 2  #   /     *´ °    $       / %        & '       3  4 5  #   P     *+µ ±    $   
+    3  4 %        & '         6           )           7  8    9      :   ;  
+s <

@@ -1,0 +1,6 @@
+Êþº¾   =    Gcom/javaguides/EmployeeManagementSystem/repository/DepartmentRepository   java/lang/Object   5org/springframework/data/jpa/repository/JpaRepository 
+findByName O(Ljava/lang/String;)Lcom/javaguides/EmployeeManagementSystem/entity/Department; MethodParameters name 	Signature –Ljava/lang/Object;Lorg/springframework/data/jpa/repository/JpaRepository<Lcom/javaguides/EmployeeManagementSystem/entity/Department;Ljava/lang/Long;>; 
+SourceFile DepartmentRepository.java RuntimeVisibleAnnotations +Lorg/springframework/stereotype/Repository;            	    
+    
+     
+            
