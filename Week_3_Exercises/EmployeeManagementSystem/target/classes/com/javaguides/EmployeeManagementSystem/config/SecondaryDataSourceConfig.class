@@ -1,0 +1,15 @@
+Êþº¾   = U
+       java/lang/Object <init> ()V
+  	  
+ 
+  /org/springframework/boot/jdbc/DataSourceBuilder create 3()Lorg/springframework/boot/jdbc/DataSourceBuilder;
+     build ()Ljavax/sql/DataSource;
+       <org/springframework/boot/orm/jpa/EntityManagerFactoryBuilder 
+dataSource ^(Ljavax/sql/DataSource;)Lorg/springframework/boot/orm/jpa/EntityManagerFactoryBuilder$Builder;   java/lang/String  8com.javaguides.EmployeeManagementSystem.entity.secondary
+        Dorg/springframework/boot/orm/jpa/EntityManagerFactoryBuilder$Builder packages [([Ljava/lang/String;)Lorg/springframework/boot/orm/jpa/EntityManagerFactoryBuilder$Builder; " 	secondary
+  $ % & persistenceUnit Z(Ljava/lang/String;)Lorg/springframework/boot/orm/jpa/EntityManagerFactoryBuilder$Builder;
+  (  ) F()Lorg/springframework/orm/jpa/LocalContainerEntityManagerFactoryBean;  + 1org/springframework/orm/jpa/JpaTransactionManager
+ * -  . -(Ljakarta/persistence/EntityManagerFactory;)V  0 Hcom/javaguides/EmployeeManagementSystem/config/SecondaryDataSourceConfig Code LineNumberTable LocalVariableTable this JLcom/javaguides/EmployeeManagementSystem/config/SecondaryDataSourceConfig; RuntimeVisibleAnnotations -Lorg/springframework/context/annotation/Bean; name secondaryDataSource ELorg/springframework/boot/context/properties/ConfigurationProperties; prefix spring.datasource.secondary entityManagerFactory š(Lorg/springframework/boot/orm/jpa/EntityManagerFactoryBuilder;Ljavax/sql/DataSource;)Lorg/springframework/orm/jpa/LocalContainerEntityManagerFactoryBean;  builder >Lorg/springframework/boot/orm/jpa/EntityManagerFactoryBuilder; Ljavax/sql/DataSource; MethodParameters secondaryEntityManagerFactory "RuntimeVisibleParameterAnnotations 8Lorg/springframework/beans/factory/annotation/Qualifier; value transactionManager h(Ljakarta/persistence/EntityManagerFactory;)Lorg/springframework/transaction/PlatformTransactionManager; *Ljakarta/persistence/EntityManagerFactory; secondaryTransactionManager 
+SourceFile SecondaryDataSourceConfig.java 6Lorg/springframework/context/annotation/Configuration; FLorg/springframework/data/jpa/repository/config/EnableJpaRepositories; basePackages <com.javaguides.EmployeeManagementSystem.repository.secondary entityManagerFactoryRef transactionManagerRef InnerClasses  Builder ! /           1   /     *· ±    2        3        4 5       1   1      ¸  ¶ 
+°    2        3         4 5   6     7  8[ s 9 :  ;s <  = >  1   l     +,¶ ½ YS¶ !¶ #¶ '°    2       %  &  '  (  )  % 3         4 5      ? @      A  B   	 ?      6     7  8[ s C D       E  Fs 9  G H  1   =     	» *Y+· ,°    2       / 3       	 4 5     	 C I  B    C   6     7  8[ s J D     E  Fs C  K    L 6     M   N  O[ s P Qs C Rs J S   
+    T 

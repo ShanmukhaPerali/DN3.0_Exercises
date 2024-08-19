@@ -1,0 +1,18 @@
+Êþº¾   = ^
+       java/lang/Object <init> ()V
+  	  
+ 
+  <org/springframework/boot/orm/jpa/EntityManagerFactoryBuilder 
+dataSource ^(Ljavax/sql/DataSource;)Lorg/springframework/boot/orm/jpa/EntityManagerFactoryBuilder$Builder;   java/lang/String  2com.javaguides.EmployeeRepositoryManagement.entity
+       Dorg/springframework/boot/orm/jpa/EntityManagerFactoryBuilder$Builder packages [([Ljava/lang/String;)Lorg/springframework/boot/orm/jpa/EntityManagerFactoryBuilder$Builder;  	secondary
+     persistenceUnit Z(Ljava/lang/String;)Lorg/springframework/boot/orm/jpa/EntityManagerFactoryBuilder$Builder;
+      build F()Lorg/springframework/orm/jpa/LocalContainerEntityManagerFactoryBean;  " java/util/HashMap
+ !  % hibernate.dialect
+ ' (  ) * + 
+java/util/Map put 8(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;  - 1org/springframework/orm/jpa/JpaTransactionManager
+ , /  0 -(Ljakarta/persistence/EntityManagerFactory;)V  2 Acom/javaguides/EmployeeManagementSystem/config/SecondaryJpaConfig Code LineNumberTable LocalVariableTable this CLcom/javaguides/EmployeeManagementSystem/config/SecondaryJpaConfig; secondaryEntityManagerFactory š(Lorg/springframework/boot/orm/jpa/EntityManagerFactoryBuilder;Ljavax/sql/DataSource;)Lorg/springframework/orm/jpa/LocalContainerEntityManagerFactoryBean;  builder >Lorg/springframework/boot/orm/jpa/EntityManagerFactoryBuilder; Ljavax/sql/DataSource; MethodParameters RuntimeVisibleAnnotations -Lorg/springframework/context/annotation/Bean; name "RuntimeVisibleParameterAnnotations 8Lorg/springframework/beans/factory/annotation/Qualifier; value secondaryDataSource hibernateProperties #(Ljava/lang/String;)Ljava/util/Map;  dialect Ljava/lang/String; props Ljava/util/Map; LocalVariableTypeTable 5Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>; 	Signature I(Ljava/lang/String;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>; secondaryTransactionManager h(Ljakarta/persistence/EntityManagerFactory;)Lorg/springframework/transaction/PlatformTransactionManager; entityManagerFactory *Ljakarta/persistence/EntityManagerFactory; 
+SourceFile SecondaryJpaConfig.java 6Lorg/springframework/context/annotation/Configuration; @Lorg/springframework/boot/autoconfigure/EnableAutoConfiguration; FLorg/springframework/data/jpa/repository/config/EnableJpaRepositories; basePackages 6com.javaguides.EmployeeRepositoryManagement.repository entityManagerFactoryRef transactionManagerRef InnerClasses  Builder ! 1           3   /     *· ±    4        5        6 7    8 9  3   l     +,¶  ½ 
+YS¶ ¶ ¶ °    4          !  "  #  $    5         6 7      : ;     
+ <  =   	 :   
+   >     ?  @[ s 8 A       B  Cs D  E F  3   l     » !Y· #M,$+¹ & W,°    4       (  )  * 5         6 7      G H    I J  K       I L  =    G   M    N  O P  3   =     	» ,Y+· .°    4       / 5       	 6 7     	 Q R  =    Q   >     ?  @[ s O A     B  Cs 8  S    T >      U   V   W  X[ s Y Zs 8 [s O \   
+    ] 

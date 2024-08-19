@@ -1,0 +1,21 @@
+Êþº¾   = g
+       java/lang/Object <init> ()V
+  	  
+ 
+  <org/springframework/boot/orm/jpa/EntityManagerFactoryBuilder 
+dataSource ^(Ljavax/sql/DataSource;)Lorg/springframework/boot/orm/jpa/EntityManagerFactoryBuilder$Builder;   java/lang/String  2com.javaguides.EmployeeRepositoryManagement.entity
+       Dorg/springframework/boot/orm/jpa/EntityManagerFactoryBuilder$Builder packages [([Ljava/lang/String;)Lorg/springframework/boot/orm/jpa/EntityManagerFactoryBuilder$Builder;   primary
+     persistenceUnit Z(Ljava/lang/String;)Lorg/springframework/boot/orm/jpa/EntityManagerFactoryBuilder$Builder;  org.hibernate.dialect.H2Dialect
+   !  " # $ 8com/javaguides/EmployeeManagementSystem/config/JpaConfig hibernateProperties #(Ljava/lang/String;)Ljava/util/Map;
+  & ' ( 
+properties W(Ljava/util/Map;)Lorg/springframework/boot/orm/jpa/EntityManagerFactoryBuilder$Builder;
+  * + , build F()Lorg/springframework/orm/jpa/LocalContainerEntityManagerFactoryBean;  . java/util/HashMap
+ -  1 hibernate.dialect
+ 3 4  5 6 7 
+java/util/Map put 8(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;  9 1org/springframework/orm/jpa/JpaTransactionManager
+ 8 ;  < -(Ljakarta/persistence/EntityManagerFactory;)V Code LineNumberTable LocalVariableTable this :Lcom/javaguides/EmployeeManagementSystem/config/JpaConfig; primaryEntityManagerFactory š(Lorg/springframework/boot/orm/jpa/EntityManagerFactoryBuilder;Ljavax/sql/DataSource;)Lorg/springframework/orm/jpa/LocalContainerEntityManagerFactoryBean;  builder >Lorg/springframework/boot/orm/jpa/EntityManagerFactoryBuilder; Ljavax/sql/DataSource; MethodParameters RuntimeVisibleAnnotations 0Lorg/springframework/context/annotation/Primary; -Lorg/springframework/context/annotation/Bean; name "RuntimeVisibleParameterAnnotations 8Lorg/springframework/beans/factory/annotation/Qualifier; value primaryDataSource  dialect Ljava/lang/String; props Ljava/util/Map; LocalVariableTypeTable 5Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>; 	Signature I(Ljava/lang/String;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>; primaryTransactionManager h(Ljakarta/persistence/EntityManagerFactory;)Lorg/springframework/transaction/PlatformTransactionManager; entityManagerFactory *Ljakarta/persistence/EntityManagerFactory; 
+SourceFile JpaConfig.java 6Lorg/springframework/context/annotation/Configuration; HLorg/springframework/transaction/annotation/EnableTransactionManagement; FLorg/springframework/data/jpa/repository/config/EnableJpaRepositories; basePackages 6com.javaguides.EmployeeRepositoryManagement.repository entityManagerFactoryRef transactionManagerRef InnerClasses  Builder !             =   /     *· ±    >       ! ?        @ A    B C  =   y     #+,¶  ½ 
+YS¶ ¶ *¶ ¶ %¶ )°    >        /  0  1  2  3  4 " / ?        # @ A     # D E    # 
+ F  G   	 D   
+   H     I   J  K[ s B L       M  Ns O  # $  =   l     » -Y· /M,0+¹ 2 W,°    >       7  8  9 ?         @ A      P Q    R S  T       R U  G    P   V    W  X Y  =   =     	» 8Y+· :°    >       A ?       	 @ A     	 Z [  G    Z   H     I   J  K[ s X L     M  Ns B  \    ] H      ^   _   `  a[ s b cs B ds X e   
+    f 

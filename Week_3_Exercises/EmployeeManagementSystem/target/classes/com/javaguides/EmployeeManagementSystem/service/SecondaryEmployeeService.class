@@ -1,0 +1,5 @@
+Êþº¾   =    Hcom/javaguides/EmployeeManagementSystem/service/SecondaryEmployeeService   java/lang/Object getAllEmployees ()Ljava/util/List; 	Signature V()Ljava/util/List<Lcom/javaguides/EmployeeManagementSystem/entity/SecondaryEmployee;>; saveEmployee †(Lcom/javaguides/EmployeeManagementSystem/entity/SecondaryEmployee;)Lcom/javaguides/EmployeeManagementSystem/entity/SecondaryEmployee; MethodParameters employee 
+SourceFile SecondaryEmployeeService.java                 	 
+  
+        
+    

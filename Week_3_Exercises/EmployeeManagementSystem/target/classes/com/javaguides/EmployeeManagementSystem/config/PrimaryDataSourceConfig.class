@@ -1,0 +1,15 @@
+Êþº¾   = V
+       java/lang/Object <init> ()V
+  	  
+ 
+  /org/springframework/boot/jdbc/DataSourceBuilder create 3()Lorg/springframework/boot/jdbc/DataSourceBuilder;
+     build ()Ljavax/sql/DataSource;
+       <org/springframework/boot/orm/jpa/EntityManagerFactoryBuilder 
+dataSource ^(Ljavax/sql/DataSource;)Lorg/springframework/boot/orm/jpa/EntityManagerFactoryBuilder$Builder;   java/lang/String  6com.javaguides.EmployeeManagementSystem.entity.primary
+        Dorg/springframework/boot/orm/jpa/EntityManagerFactoryBuilder$Builder packages [([Ljava/lang/String;)Lorg/springframework/boot/orm/jpa/EntityManagerFactoryBuilder$Builder; "  primary
+  $ % & persistenceUnit Z(Ljava/lang/String;)Lorg/springframework/boot/orm/jpa/EntityManagerFactoryBuilder$Builder;
+  (  ) F()Lorg/springframework/orm/jpa/LocalContainerEntityManagerFactoryBean;  + 1org/springframework/orm/jpa/JpaTransactionManager
+ * -  . -(Ljakarta/persistence/EntityManagerFactory;)V  0 Fcom/javaguides/EmployeeManagementSystem/config/PrimaryDataSourceConfig Code LineNumberTable LocalVariableTable this HLcom/javaguides/EmployeeManagementSystem/config/PrimaryDataSourceConfig; RuntimeVisibleAnnotations 0Lorg/springframework/context/annotation/Primary; -Lorg/springframework/context/annotation/Bean; name primaryDataSource ELorg/springframework/boot/context/properties/ConfigurationProperties; prefix spring.datasource.primary entityManagerFactory š(Lorg/springframework/boot/orm/jpa/EntityManagerFactoryBuilder;Ljavax/sql/DataSource;)Lorg/springframework/orm/jpa/LocalContainerEntityManagerFactoryBean;  builder >Lorg/springframework/boot/orm/jpa/EntityManagerFactoryBuilder; Ljavax/sql/DataSource; MethodParameters primaryEntityManagerFactory "RuntimeVisibleParameterAnnotations 8Lorg/springframework/beans/factory/annotation/Qualifier; value transactionManager h(Ljakarta/persistence/EntityManagerFactory;)Lorg/springframework/transaction/PlatformTransactionManager; *Ljakarta/persistence/EntityManagerFactory; primaryTransactionManager 
+SourceFile PrimaryDataSourceConfig.java 6Lorg/springframework/context/annotation/Configuration; FLorg/springframework/data/jpa/repository/config/EnableJpaRepositories; basePackages :com.javaguides.EmployeeManagementSystem.repository.primary entityManagerFactoryRef transactionManagerRef InnerClasses  Builder ! /           1   /     *· ±    2        3        4 5       1   1      ¸  ¶ 
+°    2        3         4 5   6     7   8  9[ s : ;  <s =  > ?  1   l     +,¶ ½ YS¶ !¶ #¶ '°    2       &  '  (  )  *  & 3         4 5      @ A      B  C   	 @      6     7   8  9[ s D E       F  Gs :  H I  1   =     	» *Y+· ,°    2       0 3       	 4 5     	 D J  C    D   6     7   8  9[ s K E     F  Gs D  L    M 6     N   O  P[ s Q Rs D Ss K T   
+    U 

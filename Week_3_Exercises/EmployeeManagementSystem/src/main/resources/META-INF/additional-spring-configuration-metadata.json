@@ -1,0 +1,62 @@
+{"properties": [
+    {
+      "name": "spring.datasource.primary.username",
+      "type": "java.lang.String",
+      "description": "A description for 'spring.datasource.primary.username'"
+    },
+    {
+      "name": "spring.datasource.primary.url",
+      "type": "java.lang.String",
+      "description": "A description for 'spring.datasource.primary.url'"
+    },
+    {
+      "name": "spring.datasource.primary.password",
+      "type": "java.lang.String",
+      "description": "A description for 'spring.datasource.primary.password'"
+    },
+    {
+      "name": "spring.datasource.primary.driver-class-name",
+      "type": "java.lang.String",
+      "description": "A description for 'spring.datasource.primary.driver-class-name'"
+    },
+    {
+      "name": "spring.datasource.primary.jpa.hibernate.ddl-auto",
+      "type": "java.lang.String",
+      "description": "A description for 'spring.datasource.primary.jpa.hibernate.ddl-auto'"
+    },
+    {
+      "name": "spring.datasource.secondary.url",
+      "type": "java.lang.String",
+      "description": "A description for 'spring.datasource.secondary.url'"
+    },
+    {
+      "name": "spring.datasource.secondary.username",
+      "type": "java.lang.String",
+      "description": "A description for 'spring.datasource.secondary.username'"
+    },
+    {
+      "name": "spring.datasource.secondary.password",
+      "type": "java.lang.String",
+      "description": "A description for 'spring.datasource.secondary.password'"
+    },
+    {
+      "name": "spring.datasource.secondary.driver-class-name",
+      "type": "java.lang.String",
+      "description": "A description for 'spring.datasource.secondary.driver-class-name'"
+    },
+    {
+      "name": "spring.datasource.secondary.jpa.hibernate.ddl-auto",
+      "type": "java.lang.String",
+      "description": "A description for 'spring.datasource.secondary.jpa.hibernate.ddl-auto'"
+    },
+    {
+      "name": "spring.datasource.primary.hikari.maximum-pool-size",
+      "type": "java.lang.String",
+      "description": "A description for 'spring.datasource.primary.hikari.maximum-pool-size'"
+    },
+    {
+      "name": "spring.datasource.secondary.hikari.maximum-pool-size",
+      "type": "java.lang.String",
+      "description": "A description for 'spring.datasource.secondary.hikari.maximum-pool-size'"
+    }
+  ]}
