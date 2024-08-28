@@ -1,0 +1,10 @@
+com\example\bookstore\mapper\EntityMapperImpl.class
+com\example\bookstore\BookDTO.class
+com\example\bookstore\BookController.class
+com\example\bookstore\CustomerDTO.class
+com\example\bookstore\Book.class
+com\example\bookstore\BookstoreApplication.class
+com\example\bookstore\GlobalExceptionHandler.class
+com\example\bookstore\mapper\EntityMapper.class
+com\example\bookstore\Customer.class
+com\example\bookstore\CustomerController.class
